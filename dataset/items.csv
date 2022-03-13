@@ -1,0 +1,91 @@
+,ITEM_ID,TITLE,GENRE,ACCEPTANCE,LINK,DIFFICULTY
+0,1,Two Sum,String,48.30,https://leetcode.com/problems/two-sum/,Easy 
+1,26,Remove Duplicates from Sorted Array,String,48.30,https://leetcode.com/problems/remove-duplicates-from-sorted-array/,Easy 
+2,27,Remove Element,String,50.90,https://leetcode.com/problems/remove-element/,Easy 
+3,35,Search Insert Position,String,42.50,https://leetcode.com/problems/search-insert-position/,Easy 
+4,53,Maximum Subarray,String,49.40,https://leetcode.com/problems/maximum-subarray/,Easy 
+5,11,Container With Most Water,String,53.40,https://leetcode.com/problems/container-with-most-water,Medium 
+6,15,3Sum,String,30.60,https://leetcode.com/problems/3sum,Medium 
+7,16,3Sum Closest,String,47.00,https://leetcode.com/problems/3sum-closest,Medium 
+8,18,4Sum,String,37.00,https://leetcode.com/problems/4sum,Medium 
+9,31,Next Permutation,String,35.30,https://leetcode.com/problems/next-permutation,Medium 
+10,37,Sudoku Solver,String,53.00,https://leetcode.com/problems/sudoku-solver,Hard
+11,41,First Missing Positive,String,35.70,https://leetcode.com/problems/first-missing-positive,Hard
+12,42,Trapping Rain Water,String,55.70,https://leetcode.com/problems/trapping-rain-water,Hard
+13,51,N-Queens,String,56.30,https://leetcode.com/problems/n-queens,Hard
+14,68,Text Justification,String,34.30,https://leetcode.com/problems/text-justification,Hard
+15,13,Roman to Integer,Hash Table,57.80,https://leetcode.com/problems/roman-to-integer,Easy 
+16,141,Linked List Cycle,Hash Table,45,https://leetcode.com/problems/linked-list-cycle,Easy 
+17,160,Intersection of Two Linked Lists,Hash Table,49.00,https://leetcode.com/problems/intersection-of-two-linked-lists,Easy 
+18,169,Majority Element,Hash Table,62.10,https://leetcode.com/problems/majority-element,Easy 
+19,202,Happy Number,Hash Table,52.80,https://leetcode.com/problems/happy-number,Easy 
+20,3,Longest Substring Without Repeating Characters,Hash Table,32.80,https://leetcode.com/problems/longest-substring-without-repeating-characters,Medium 
+21,12,Integer to Roman,Hash Table,59.00,https://leetcode.com/problems/integer-to-roman,Medium 
+22,17,Letter Combinations of a Phone Number,Hash Table,53.00,https://leetcode.com/problems/letter-combinations-of-a-phone-number/,Medium 
+23,36,Valid Sudoku,Hash Table,54.40,https://leetcode.com/problems/valid-sudoku,Medium 
+24,49,Group Anagrams,Hash Table,63.40,https://leetcode.com/problems/group-anagrams,Medium 
+25,30,Substring with Concatenation of All Words,Hash Table,27.80,https://leetcode.com/problems/substring-with-concatenation-of-all-words,Hard
+26,41,First Missing Positive,Hash Table,35.70,https://leetcode.com/problems/first-missing-positive,Hard
+27,76,Minimum Window Substring,Hash Table,38.60,https://leetcode.com/problems/minimum-window-substring,Hard
+28,126,Word Ladder II,Hash Table,26.60,https://leetcode.com/problems/word-ladder-ii,Hard
+29,127,Word Ladder,Hash Table,35.00,https://leetcode.com/problems/word-ladder,Hard
+30,53,Maximum Subarray,Dynamic Programming,49.40,https://leetcode.com/problems/maximum-subarray/,Easy
+31,70,Climbing Stairs,Dynamic Programming,50.70,https://leetcode.com/problems/climbing-stairs/,Easy
+32,118,Pascal's Triangle,Dynamic Programming,63,https://leetcode.com/problems/pascals-triangle/,Easy
+33,119,Pascal's Triangle II,Dynamic Programming,56.60,https://leetcode.com/problems/pascals-triangle-ii/,Easy
+34,121,Best Time to Buy and Sell Stock,Dynamic Programming,53.80,https://leetcode.com/problems/best-time-to-buy-and-sell-stock/,Easy
+35,5,Longest Palindromic Substring,Dynamic Programming,31.70,https://leetcode.com/problems/longest-palindromic-substring/,Medium
+36,22,Generate Parentheses,Dynamic Programming,69.40,https://leetcode.com/problems/generate-parentheses/,Medium
+37,45,Jump Game II,Dynamic Programming,36.40,https://leetcode.com/problems/jump-game-ii/,Medium
+38,55,Jump Game,Dynamic Programming,37.40,https://leetcode.com/problems/jump-game/,Medium
+39,62,Unique Paths,Dynamic Programming,59.40,https://leetcode.com/problems/unique-paths/,Medium
+40,10,Regular Expression Matching,Dynamic Programming,28.20,https://leetcode.com/problems/regular-expression-matching/,Hard
+41,32,Longest Valid Parentheses,Dynamic Programming,31.10,https://leetcode.com/problems/longest-valid-parentheses/,Hard
+42,42,Trapping Rain Water,Dynamic Programming,55.70,https://leetcode.com/problems/trapping-rain-water/,Hard
+43,44,Wildcard Matching,Dynamic Programming,26.40,https://leetcode.com/problems/wildcard-matching/,Hard
+44,72,Edit Distance,Dynamic Programming,50.20,https://leetcode.com/problems/edit-distance/,Hard
+45,94,Binary Tree Inorder Traversal,DFS,70,https://leetcode.com/problems/binary-tree-inorder-traversal/,Easy
+46,100,Same Tree,DFS,55.20,https://leetcode.com/problems/same-tree/,Easy
+47,101,Symmetric Tree,DFS,51.10,https://leetcode.com/problems/symmetric-tree/,Easy
+48,104,Maximum Depth of Binary Tree,DFS,71.40,https://leetcode.com/problems/maximum-depth-of-binary-tree/,Easy
+49,110,Balanced Binary Tree,DFS,46.40,https://leetcode.com/problems/balanced-binary-tree/,Easy
+50,98,Validate Binary Search Tree,DFS,30.20,https://leetcode.com/problems/validate-binary-search-tree/,Medium
+51,99,Recover Binary Search Tree,DFS,45.80,https://leetcode.com/problems/recover-binary-search-tree/,Medium
+52,113,Path Sum II,DFS,53.40,https://leetcode.com/problems/path-sum-ii/,Medium
+53,114,Flatten Binary Tree to Linked List,DFS,57,https://leetcode.com/problems/flatten-binary-tree-to-linked-list/,Medium
+54,116,Populating Next Right Pointers in Each Node,DFS,55.90,https://leetcode.com/problems/populating-next-right-pointers-in-each-node/,Medium
+55,124,Binary Tree Maximum Path Sum,DFS,37.30,https://leetcode.com/problems/binary-tree-maximum-path-sum/,Hard
+56,329,Longest Increasing Path in a Matrix,DFS,49.10,https://leetcode.com/problems/longest-increasing-path-in-a-matrix/,Hard
+57,332,Reconstruct Itinerary,DFS,39.90,https://leetcode.com/problems/reconstruct-itinerary/,Hard
+58,472,Concatenated Words,DFS,42.30,https://leetcode.com/problems/concatenated-words/,Hard
+59,514,Freedom Trail,DFS,45.90,https://leetcode.com/problems/freedom-trail/,Hard
+60,88,Merge Sorted Array,Sorting,43.30,https://leetcode.com/problems/merge-sorted-array,Easy 
+61,169,Majority Element,Sorting,62.10,https://leetcode.com/problems/majority-element,Easy 
+62,217,Contains Duplicate,Sorting,60.20,https://leetcode.com/problems/contains-duplicate,Easy 
+63,242,Valid Anagram,Sorting,61.00,https://leetcode.com/problems/valid-anagram,Easy 
+64,268,Missing Number,Sorting,58.80,https://leetcode.com/problems/missing-number,Easy 
+65,18,4Sum,Sorting,37.00,https://leetcode.com/problems/4sum,Medium 
+66,56,Merge Intervals,Sorting,44.40,https://leetcode.com/problems/merge-intervals,Medium 
+67,75,Sort Colors,Sorting,54.00,https://leetcode.com/problems/sort-colors,Medium 
+68,147,Insertion Sort List,Sorting,48.40,https://leetcode.com/problems/insertion-sort-list,Medium 
+69,148,Sort List,Sorting,50.10,https://leetcode.com/problems/sort-list,Medium 
+70,164,Maximum Gap,Sorting,41.00,https://leetcode.com/problems/maximum-gap,Hard
+71,295,Find Median from Data Stream,Sorting,50.00,https://leetcode.com/problems/find-median-from-data-stream,Hard
+72,354,Russian Doll Envelopes,Sorting,39.40,https://leetcode.com/problems/russian-doll-envelopes,Hard
+73,502,IPO,Sorting,43.70,https://leetcode.com/problems/ipo,Hard
+74,632,Smallest Range Covering Elements from K Lists,Sorting,57.80,https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists,Hard
+75,94,Binary Tree Inorder Traversal,Tree,70.00,https://leetcode.com/problems/binary-tree-inorder-traversal,Easy 
+76,100,Same Tree,Tree,55.20,https://leetcode.com/problems/same-tree/,Easy 
+77,101,Symmetric Tree,Tree,51.10,https://leetcode.com/problems/symmetric-tree/,Easy 
+78,104,Maximum Depth of Binary Tree,Tree,71.40,https://leetcode.com/problems/maximum-depth-of-binary-tree/,Easy 
+79,108,Convert Sorted Array to Binary Search Tree,Tree,65.30,https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/,Easy 
+80,95,Unique Binary Search Trees II,Tree,48.70,https://leetcode.com/problems/unique-binary-search-trees-ii,Medium 
+81,96,Unique Binary Search Trees,Tree,57.90,https://leetcode.com/problems/unique-binary-search-trees,Medium 
+82,98,Validate Binary Search Tree,Tree,30.20,https://leetcode.com/problems/validate-binary-search-tree,Medium 
+83,99,Recover Binary Search Tree,Tree,45.80,https://leetcode.com/problems/recover-binary-search-tree,Medium 
+84,102,Binary Tree Level Order Traversal,Tree,60.30,https://leetcode.com/problems/binary-tree-level-order-traversal,Medium 
+85,124,Binary Tree Maximum Path Sum,Tree,37.30,https://leetcode.com/problems/binary-tree-maximum-path-sum,Hard
+86,297,Serialize and Deserialize Binary Tree,Tree,53.10,https://leetcode.com/problems/serialize-and-deserialize-binary-tree,Hard
+87,834,Sum of Distances in Tree,Tree,52.70,https://leetcode.com/problems/sum-of-distances-in-tree,Hard
+88,968,Binary Tree Cameras,Tree,41.60,https://leetcode.com/problems/binary-tree-cameras,Hard
+89,987,Vertical Order Traversal of a Binary Tree,Tree,41.00,https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree,Hard
