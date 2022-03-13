@@ -31,4 +31,9 @@ export default class NotesAPI {
 
         localStorage.setItem("notesapp-notes", JSON.stringify(newNotes));
     }
+
+    static getLeetRecc(note, difficulty) {
+        console.log(note.body);
+        console.log(difficulty);
+    }
 }

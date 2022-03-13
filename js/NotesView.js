@@ -8,16 +8,13 @@ export default class NotesView {
         this.onNoteDelete = onNoteDelete;
         this.onLeetAdd = onLeetAdd;
         this.root.innerHTML = `
-        <form action= "#">
-        <select name="Difficulty" id="long">
-            <optgroup label="Difficulty">
-                    <option value="1">Difficulty</option>
-                    <option value="2">Easy</option>
-                    <option value="3">Medium</option>
-                    <option value="4">Hard</option>
+            <form action= "#">
+                <select class="difficulty" name="Difficulty" id="long">
+                    <option value="0">Easy</option>
+                    <option value="1">Medium</option>
+                    <option value="2">Hard</option>
                 </select>
-            </optgroup> 
-        </form>
+            </form>
             <button class="leet_add" type="button">Get Leet</button>  
             <div class="notes__sidebar">
                 <div class="notes__list"></div>
@@ -35,10 +32,11 @@ export default class NotesView {
         const inpBody = this.root.querySelector(".notes__body");
         var btnInputVoice = this.root.querySelector(".voice__add");
         const btninputLeet = this.root.querySelector(".leet_add");
-
+        const btnDifficulty = this.root.querySelector(".difficulty")
        
         btninputLeet.addEventListener("click", () => {
-            this.onLeetAdd();
+            this.onLeetAdd(btnDifficulty.options[btnDifficulty.value].text);
+            // console.log()
         })
 
         btnInputVoice.addEventListener("click", () => {

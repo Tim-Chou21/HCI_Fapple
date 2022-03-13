@@ -40,14 +40,15 @@ export default class App {
             },
             onVoiceAdd: (voiceInputBtn, title, body) => {
                 console.log(title + body);
-                console.log('aaaaa');
+                // console.log('aaaaa');
                 VoiceAPI.startVoiceInput(voiceInputBtn, this.activeNote.id, title, body);
                 this._refreshNotes();
-                console.log('refresh');
+                // console.log('refresh');
             }, 
-            onLeetAdd: () => {
-                var strUser = e.options[e.selectedIndex].value;
-                var strUser = e.options[e.selectedIndex].text;
+            onLeetAdd: (difficulty) => {
+                console.log(difficulty)
+                NotesAPI.getLeetRecc(this.activeNote, difficulty);
+
             },
             onNoteAdd: () => {
                 const newNote = {
