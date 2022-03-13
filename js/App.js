@@ -45,6 +45,10 @@ export default class App {
                 this._refreshNotes();
                 console.log('refresh');
             }, 
+            onLeetAdd: () => {
+                var strUser = e.options[e.selectedIndex].value;
+                var strUser = e.options[e.selectedIndex].text;
+            },
             onNoteAdd: () => {
                 const newNote = {
                     title: "New Note",

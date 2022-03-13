@@ -1,12 +1,24 @@
 export default class NotesView {
-    constructor(root, { onVoiceAdd, onNoteSelect, onNoteAdd, onNoteEdit, onNoteDelete } = {}) {
+    constructor(root, { onVoiceAdd, onNoteSelect, onNoteAdd, onNoteEdit, onNoteDelete, onLeetAdd } = {}) {
         this.root = root;
         this.onVoiceAdd = onVoiceAdd;
         this.onNoteSelect = onNoteSelect;
         this.onNoteAdd = onNoteAdd;
         this.onNoteEdit = onNoteEdit;
         this.onNoteDelete = onNoteDelete;
+        this.onLeetAdd = onLeetAdd;
         this.root.innerHTML = `
+        <form action= "#">
+        <select name="Difficulty" id="long">
+            <optgroup label="Difficulty">
+                    <option value="1">Difficulty</option>
+                    <option value="2">Easy</option>
+                    <option value="3">Medium</option>
+                    <option value="4">Hard</option>
+                </select>
+            </optgroup> 
+        </form>
+            <button class="leet_add" type="button">Get Leet</button>  
             <div class="notes__sidebar">
                 <div class="notes__list"></div>
                 <button class="notes__add" type="button">Add Note</button>
@@ -22,6 +34,12 @@ export default class NotesView {
         const inpTitle = this.root.querySelector(".notes__title");
         const inpBody = this.root.querySelector(".notes__body");
         var btnInputVoice = this.root.querySelector(".voice__add");
+        const btninputLeet = this.root.querySelector(".leet_add");
+
+       
+        btninputLeet.addEventListener("click", () => {
+            this.onLeetAdd();
+        })
 
         btnInputVoice.addEventListener("click", () => {
             this.onVoiceAdd(btnInputVoice, inpTitle.value, inpBody.value);

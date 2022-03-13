@@ -156,3 +156,41 @@ body {
     margin-top: 2em;
     resize: none;
 }
+
+#long {
+    background-color: #f8cb04;
+    color: white;
+    padding: 1em 3em 1em 3em;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 75px;
+    right: 30px;
+    width: 13.5%;
+    border-radius: 7px;
+}
+
+#long:hover {
+    background: #d6af00;
+}
+
+.leet_add {
+    background: #f8cb04;
+    border: none;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 4.5em;
+    padding: 0.75em 0;
+    right: 30px;
+    width: 13.5%;
+    position: fixed;
+    top: 10px;
+}
+
+.leet_add:hover {
+    background: #d6af00;
+}
