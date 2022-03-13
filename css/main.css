@@ -80,13 +80,18 @@ body {
     cursor: pointer;
     font-size: 0.80em;
     font-weight: bold;
-    /* margin-bottom: 4.5em; */
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
     /* padding: 0.75em 0; */
     right: 30px;
     width: 18%;
     height: 10%
     /* position: fixed; */
     /* bottom: 10px; */
+}
+
+.delete_btn:hover {
+    background: #d6af00;
 }
 
 
