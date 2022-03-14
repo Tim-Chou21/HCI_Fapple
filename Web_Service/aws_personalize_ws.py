@@ -66,8 +66,8 @@ def get_recommendation_filter_by_genre():
         item_id_list.append(int(item['itemId']))
     
     filter = df["ITEM_ID"].isin(item_id_list)
-    # print(df[filter].to_json(orient="records"))
-    return df[filter].to_json(orient="records")
+    print(df[filter].to_json(orient="records"))
+    return df[filter].iloc[:3].to_json(orient="records")
 
 @app.route("/get-recommendation-by-user-id", methods=['POST'])
 def get_recommendation_by_user_id():

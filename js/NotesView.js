@@ -144,6 +144,13 @@ export default class NotesView {
         const btninputLeet1 = this.root.querySelector(".leet");
         var promiseB = data.then(function(result) {
             // do something with result
+            var parsedJSON = JSON.parse(result);
+            for (var i=0;i<parsedJSON.length;i++) {
+                alert(parsedJSON[i]['LINK']);
+            }
+            // console.log('json' + JSON.parse(result));
+            // console.log('type:' + typeof result);
+
             btninputLeet1.dataset.content = result;
             return result;
          });

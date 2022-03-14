@@ -46,21 +46,7 @@ export default class App {
                 // console.log('refresh');
             }, 
             onLeetAdd: (difficulty) => {
-                // console.log(difficulty)
-                // let res = '';
-                // res = NotesAPI.getLeetRecc(this.activeNote, difficulty);
-                // var promiseB = res.then(function(result) {
-                //     // do something with result
-                //     // this.view.setLeetRecc(result);
-                //     // this._setLeetRecc1(result);
-                //     console.log(result);
-                //     console.log('hi');
-                //     return result;
-                //  });
-                // console.log(res);
                 this.view.setLeetRecc(NotesAPI.getLeetRecc(this.activeNote, difficulty));
-                // console.log('promiseB' + promiseB);
-                // console.log(res);
             },
             onNoteAdd: () => {
                 const newNote = {

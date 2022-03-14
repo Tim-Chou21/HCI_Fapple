@@ -59,8 +59,4 @@ export default class NotesAPI {
         // console.log('api' + JSON.stringify(data));
         return JSON.stringify(data);
     }
-
-    static getLeetReccRes(data) {
-        console.log(data);
-    }
 }
