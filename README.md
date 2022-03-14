@@ -14,30 +14,12 @@ Website:
 Web Services: 
   Amazon Web Services:
 * AWS - Personalize
-* AWS -S3
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* AWS - S3
 
 Contributor:
-Ting-Chun Chou & Te-An Liu & Michael Pan
+* Ting-Chun Chou
+* Te-An Liu 
+* Michael Pan
 
 Ref:
 https://youtu.be/01YKQmia2Jw
