@@ -33,7 +33,25 @@ export default class NotesAPI {
     }
 
     static getLeetRecc(note, difficulty) {
-        console.log(note.body);
-        console.log(difficulty);
+        // console.log(note.body);
+        // console.log(difficulty);
+        let _data = {
+            note: note.body,
+            difficulty: difficulty
+          }
+        
+        fetch('http://localhost:8080/get-sims-recommendation-by-filter', {
+            // mode: 'no-cors',
+            method: "POST",
+            body: JSON.stringify(_data),
+            headers: {"Content-type": "application/json; charset=UTF-8"}
+        })
+        .then(response => response.json())
+        .then(data => NotesAPI.getLeetReccRes(data))
+        .catch(err => console.log(err));
+    }
+
+    static getLeetReccRes(data) {
+        console.log(data);
     }
 }

@@ -6,9 +6,11 @@ import logging
 import time                  
 import json
 from flask import Flask, request, jsonify, abort
+from flask_cors import CORS, cross_origin
 import boto3
 
-app = Flask(__name__)          
+app = Flask(__name__)
+CORS(app)          
 app.logger.setLevel(logging.DEBUG)
 
 #load items.csv
@@ -40,8 +42,11 @@ def parse_note(note):
 # INCLUDE ItemID WHERE Items.GENRES IN ($genre)
 @app.route("/get-sims-recommendation-by-filter", methods=['POST'])
 def get_recommendation_filter_by_genre():
-    genres = parse_note(request.args.get('text'))
-    difficulty = request.args.get('difficulty')
+    data = json.loads(request.data)
+    # print(json.loads(data))
+    genres = parse_note(data["note"])
+    difficulty = data["difficulty"]
+    # difficulty = request.args.get'('difficulty')
     response = personalize_rt.get_recommendations(
             campaignArn = 'arn:aws:personalize:us-east-1:349807295075:campaign/aws-sim-items-new-campaign',
             itemId = '35',
