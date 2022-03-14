@@ -4,6 +4,7 @@ This is a course project for ECE209 AS Human-Computer Interaction at UCLA
 
 # Abstract
 This is a website helping people practing leecode problems while taking notes.
+<img width="1495" alt="Screen Shot 2022-03-14 at 4 54 25 PM" src="https://user-images.githubusercontent.com/54812971/158279757-b4674d3c-7345-478e-a1f2-fed6d15eefee.png">
 
 # Scenario
 1. User can take notes via keyboard or voice.
