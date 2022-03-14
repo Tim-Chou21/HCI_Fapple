@@ -22,9 +22,9 @@ export default class NotesView {
             </div>
             <button class="leet_add" type="button">Note Done!</button>  
 
-            <button type="button" class="leet" title="Popover title"  
+            <button type="button" class="leet" title="Leetcode problems tailored for you!"  
             data-container="body" data-toggle="popover" data-placement="left" 
-            data-content= "Vivamus sagittis.">
+            data-content= "None detected." data-html="true" data-trigger="focus">
                 Get Leetcode
             </button>
             <div class="notes__preview">
@@ -91,8 +91,6 @@ export default class NotesView {
 
     updateNoteList(notes) {
         const notesListContainer = this.root.querySelector(".notes__list");
-
-        // Empty list
         notesListContainer.innerHTML = "";
 
         for (const note of notes) {
@@ -145,13 +143,17 @@ export default class NotesView {
         var promiseB = data.then(function(result) {
             // do something with result
             var parsedJSON = JSON.parse(result);
+            var str = '';
             for (var i=0;i<parsedJSON.length;i++) {
-                alert(parsedJSON[i]['LINK']);
+                str += "ITEM_ID: "+ (parsedJSON[i]['ITEM_ID']) + "<br/>";
+                str += "TITLE: "+ (parsedJSON[i]['TITLE']) + "<br/>";
+                str += "GENRE: "+ (parsedJSON[i]['GENRE']) + "<br/>";
+                str += "ACCEPTANCE: "+ (parsedJSON[i]['ACCEPTANCE']) + "<br/>";
+                str += "LINK: <a href=\"" + (parsedJSON[i]['LINK']) + "\" target=\"_blank\">Link to Leetcode</a><br/>";
+                str += "DIFFICULTY: "+ (parsedJSON[i]['DIFFICULTY']) + "<br/>============================<br/>";
             }
-            // console.log('json' + JSON.parse(result));
-            // console.log('type:' + typeof result);
 
-            btninputLeet1.dataset.content = result;
+            btninputLeet1.dataset.content = str;
             return result;
          });
     }

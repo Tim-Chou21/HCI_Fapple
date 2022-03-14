@@ -40,10 +40,8 @@ export default class App {
             },
             onVoiceAdd: (voiceInputBtn, title, body) => {
                 console.log(title + body);
-                // console.log('aaaaa');
                 VoiceAPI.startVoiceInput(voiceInputBtn, this.activeNote.id, title, body);
                 this._refreshNotes();
-                // console.log('refresh');
             }, 
             onLeetAdd: (difficulty) => {
                 this.view.setLeetRecc(NotesAPI.getLeetRecc(this.activeNote, difficulty));
