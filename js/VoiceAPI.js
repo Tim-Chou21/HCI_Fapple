@@ -40,9 +40,6 @@ export default class VoiceAPI {
         console.log(recognition);
         // document.getElementById("voice").innerHTML = 'Start Voice Recognition...';
         console.log('Ready to receive a color command.');
-        // while (!voiceEnd) {
-        //     console.log('not end');
-        // }
     }
 }
 

@@ -5,8 +5,8 @@ import pandas as pd
 import logging
 import time                  
 import json
-from flask import Flask, request, jsonify, abort
-from flask_cors import CORS, cross_origin
+from flask import Flask, request
+from flask_cors import CORS
 import boto3
 
 app = Flask(__name__)
@@ -43,10 +43,8 @@ def parse_note(note):
 @app.route("/get-sims-recommendation-by-filter", methods=['POST'])
 def get_recommendation_filter_by_genre():
     data = json.loads(request.data)
-    # print(json.loads(data))
     genres = parse_note(data["note"])
     difficulty = data["difficulty"]
-    # difficulty = request.args.get'('difficulty')
     response = personalize_rt.get_recommendations(
             campaignArn = 'arn:aws:personalize:us-east-1:349807295075:campaign/aws-sim-items-new-campaign',
             itemId = '35',
@@ -68,7 +66,7 @@ def get_recommendation_filter_by_genre():
         item_id_list.append(int(item['itemId']))
     
     filter = df["ITEM_ID"].isin(item_id_list)
-    print(df[filter].to_json(orient="records"))
+    # print(df[filter].to_json(orient="records"))
     return df[filter].to_json(orient="records")
 
 @app.route("/get-recommendation-by-user-id", methods=['POST'])

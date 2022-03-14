@@ -24,17 +24,7 @@ export default class NotesView {
 
             <button type="button" class="leet" title="Popover title"  
             data-container="body" data-toggle="popover" data-placement="left" 
-            data-content= "Vivamus sagittis lacus vel augue laoreet rutrum faucibusivamus 
-            sagittis lacus vel augue laoreet rutrum faucibusivamus sagittis lacus vel augue 
-            laoreet rutrum faucibusivamus sagittis lacus vel augue laoreet rutrum 
-            faucibusivamus sagittis lacus vel augue laoreet rutrum faucibusivamus 
-            sagittis lacus vel augue laoreet rutrum faucibusivamus sagittis lacus vel augue 
-            laoreet rutrum faucibusivamus sagittis lacus vel augue laoreet rutrum faucibusivamus 
-            laoreet rutrum faucibusivamus sagittis lacus vel augue laoreet rutrum 
-            faucibusivamus sagittis lacus vel augue laoreet rutrum faucibusivamus 
-            sagittis lacus vel augue laoreet rutrum faucibusivamus sagittis lacus vel augue 
-            laoreet rutrum faucibusivamus sagittis lacus vel augue laoreet rutrum faucibusivamus
-            sagittis lacus vel augue laoreet rutrum faucibus.">
+            data-content= "Vivamus sagittis.">
                 Get Leetcode
             </button>
             <div class="notes__preview">
@@ -42,9 +32,6 @@ export default class NotesView {
                 <textarea class="notes__body">Take Note...</textarea>
             </div>
         `;
-
-        // <button class="leet_add" type="button">Get Leet</button>  
-
 
         const btnAddNote = this.root.querySelector(".notes__add");
         const inpTitle = this.root.querySelector(".notes__title");
@@ -55,12 +42,11 @@ export default class NotesView {
         const btnDifficulty = this.root.querySelector(".difficulty");
        
         btninputLeet1.addEventListener("click", () => {
-            // console.log()
+            // btninputLeet1.dataset.content = 'hihi';
         });
 
         btninputLeet.addEventListener("click", () => {
             this.onLeetAdd(btnDifficulty.options[btnDifficulty.value].text);
-            // console.log()
         });
 
         btnInputVoice.addEventListener("click", () => {
@@ -152,5 +138,14 @@ export default class NotesView {
 
     updateNotePreviewVisibility(visible) {
         this.root.querySelector(".notes__preview").style.visibility = visible ? "visible" : "hidden";
+    }
+
+    setLeetRecc(data) {
+        const btninputLeet1 = this.root.querySelector(".leet");
+        var promiseB = data.then(function(result) {
+            // do something with result
+            btninputLeet1.dataset.content = result;
+            return result;
+         });
     }
 }

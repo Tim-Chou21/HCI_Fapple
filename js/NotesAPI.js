@@ -32,23 +32,32 @@ export default class NotesAPI {
         localStorage.setItem("notesapp-notes", JSON.stringify(newNotes));
     }
 
-    static getLeetRecc(note, difficulty) {
+    static async getLeetRecc(note, difficulty) {
         // console.log(note.body);
         // console.log(difficulty);
         let _data = {
             note: note.body,
             difficulty: difficulty
-          }
+        }
         
-        fetch('http://localhost:8080/get-sims-recommendation-by-filter', {
+        // fetch('http://localhost:8080/get-sims-recommendation-by-filter', {
+        //     // mode: 'no-cors',
+        //     method: "POST",
+        //     body: JSON.stringify(_data),
+        //     headers: {"Content-type": "application/json; charset=UTF-8"}
+        // })
+        // .then(response => response.json())
+        // .then(data => NotesAPI.getLeetReccRes(data))
+        // .catch(err => console.log(err));
+        const response = await fetch('http://localhost:8080/get-sims-recommendation-by-filter', {
             // mode: 'no-cors',
             method: "POST",
             body: JSON.stringify(_data),
             headers: {"Content-type": "application/json; charset=UTF-8"}
-        })
-        .then(response => response.json())
-        .then(data => NotesAPI.getLeetReccRes(data))
-        .catch(err => console.log(err));
+        });
+        const data = await response.json();
+        // console.log('api' + JSON.stringify(data));
+        return JSON.stringify(data);
     }
 
     static getLeetReccRes(data) {
