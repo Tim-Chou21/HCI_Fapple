@@ -23,10 +23,10 @@ Web Services:
 * AWS - Personalize
 * AWS - S3
 
-Contributor:
+# Contributor
 * Ting-Chun Chou
 * Te-An Liu 
 * Michael Pan
 
-Ref:
+# Reference
 https://youtu.be/01YKQmia2Jw
