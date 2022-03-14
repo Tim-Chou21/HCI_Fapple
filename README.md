@@ -7,13 +7,13 @@ This is a website helping people practing leecode problems while taking notes.
 
 # Tech Stack
 Website: 
-    * HTML
-    * Javascript
-    * CSS
+* HTML
+* Javascript
+* CSS
 Web Services: 
   Amazon Web Services:
-    * Personalize
-    # S3
+* Personalize
+* S3
 
 
 
