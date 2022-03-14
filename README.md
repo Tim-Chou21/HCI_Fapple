@@ -13,8 +13,8 @@ Website:
 
 Web Services: 
   Amazon Web Services:
-* Personalize
-* S3
+* AWS - Personalize
+* AWS -S3
 
 
 
