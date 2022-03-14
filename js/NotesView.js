@@ -15,33 +15,57 @@ export default class NotesView {
                     <option value="2">Hard</option>
                 </select>
             </form>
-            <button class="leet_add" type="button">Get Leet</button>  
             <div class="notes__sidebar">
                 <div class="notes__list"></div>
                 <button class="notes__add" type="button">Add Note</button>
                 <button class="voice__add" type="button">Voice Input</button>
             </div>
+            <button class="leet_add" type="button">Note Done!</button>  
+
+            <button type="button" class="leet" title="Popover title"  
+            data-container="body" data-toggle="popover" data-placement="left" 
+            data-content= "Vivamus sagittis lacus vel augue laoreet rutrum faucibusivamus 
+            sagittis lacus vel augue laoreet rutrum faucibusivamus sagittis lacus vel augue 
+            laoreet rutrum faucibusivamus sagittis lacus vel augue laoreet rutrum 
+            faucibusivamus sagittis lacus vel augue laoreet rutrum faucibusivamus 
+            sagittis lacus vel augue laoreet rutrum faucibusivamus sagittis lacus vel augue 
+            laoreet rutrum faucibusivamus sagittis lacus vel augue laoreet rutrum faucibusivamus 
+            laoreet rutrum faucibusivamus sagittis lacus vel augue laoreet rutrum 
+            faucibusivamus sagittis lacus vel augue laoreet rutrum faucibusivamus 
+            sagittis lacus vel augue laoreet rutrum faucibusivamus sagittis lacus vel augue 
+            laoreet rutrum faucibusivamus sagittis lacus vel augue laoreet rutrum faucibusivamus
+            sagittis lacus vel augue laoreet rutrum faucibus.">
+                Get Leetcode
+            </button>
             <div class="notes__preview">
                 <input class="notes__title" type="text" placeholder="New Note...">
                 <textarea class="notes__body">Take Note...</textarea>
             </div>
         `;
 
+        // <button class="leet_add" type="button">Get Leet</button>  
+
+
         const btnAddNote = this.root.querySelector(".notes__add");
         const inpTitle = this.root.querySelector(".notes__title");
         const inpBody = this.root.querySelector(".notes__body");
         var btnInputVoice = this.root.querySelector(".voice__add");
         const btninputLeet = this.root.querySelector(".leet_add");
-        const btnDifficulty = this.root.querySelector(".difficulty")
+        const btninputLeet1 = this.root.querySelector(".leet");
+        const btnDifficulty = this.root.querySelector(".difficulty");
        
+        btninputLeet1.addEventListener("click", () => {
+            // console.log()
+        });
+
         btninputLeet.addEventListener("click", () => {
             this.onLeetAdd(btnDifficulty.options[btnDifficulty.value].text);
             // console.log()
-        })
+        });
 
         btnInputVoice.addEventListener("click", () => {
             this.onVoiceAdd(btnInputVoice, inpTitle.value, inpBody.value);
-        })
+        });
 
         btnAddNote.addEventListener("click", () => {
             this.onNoteAdd();
