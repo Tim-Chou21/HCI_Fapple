@@ -30,6 +30,7 @@ Web Services:
 * Michael Pan
 
 # Reference
+* https://docs.aws.amazon.com/personalize/latest/dg/what-is-personalize.html
 * https://github.com/aws-samples/amazon-personalize-samples
 * https://github.com/dcode-youtube/notes-app-javascript-localstorage/tree/main
 * https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition
