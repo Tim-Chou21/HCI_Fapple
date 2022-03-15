@@ -30,5 +30,6 @@ Web Services:
 * Michael Pan
 
 # Reference
+https://github.com/aws-samples/amazon-personalize-samples
 https://github.com/dcode-youtube/notes-app-javascript-localstorage/tree/main
 https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition
