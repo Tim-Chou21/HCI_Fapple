@@ -30,4 +30,5 @@ Web Services:
 * Michael Pan
 
 # Reference
-https://youtu.be/01YKQmia2Jw
+https://github.com/dcode-youtube/notes-app-javascript-localstorage/tree/main
+https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition
